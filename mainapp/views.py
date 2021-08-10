@@ -2,11 +2,11 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 # Create your views here.
-def landing_page(request):
-    return HttpResponse("Nisa <3 Alex")
 
-def second_page(request):
-    return HttpResponse("Second page")
+
+def landing_page(request):
+    return HttpResponse("Hello, World! Nama Saya Ariq")
+
 
 def profile(request):
     return HttpResponse("profile ku")
@@ -32,11 +32,26 @@ def newpage(request):
 def a(request):
     return HttpResponse()
 
+
 def shop(request):
     return render(request, 'shop.html')
 
-def firstpage(request):
+
+def shop_laptop(request):
+    return render(request, 'shop_laptop.html')
+
+
+def shop_console(request):
+    return render(request, 'shop_console.html')
+
+
+def shop_smartphone(request):
+    return render(request, 'shop_smartphone.html')
+
+
+def first_page(request):
     return render(request, 'firstpage.html')
 
-def secondpage(request):
+
+def second_page(request):
     return render(request, 'secondpage.html')
