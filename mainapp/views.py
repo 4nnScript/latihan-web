@@ -31,3 +31,6 @@ def newpage(request):
 
 def a(request):
     return HttpResponse()
+
+def shop(request):
+    return render(request, 'shop.html')
