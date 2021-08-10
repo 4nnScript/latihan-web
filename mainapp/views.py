@@ -55,3 +55,6 @@ def first_page(request):
 
 def second_page(request):
     return render(request, 'secondpage.html')
+
+def buy (request):
+    return render (request, "buy.html")
