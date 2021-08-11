@@ -58,3 +58,9 @@ def second_page(request):
 
 def buy (request):
     return render (request, "buy.html")
+
+def home (request):
+    return render (request, "home.html")
+
+def makeup(request):
+    return render (request, "makeup.html")
