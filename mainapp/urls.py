@@ -10,7 +10,7 @@ urlpatterns = [
     path('shop/console/', views.shop_console),
     path('buy/', views.buy),
     path('home/', views.home),
-    path('makeup/', views.makeup),
+    path ('wedding/', views.wedding),
     path('firstpage/', views.first_page),
     path('secondpage/', views.second_page),
     path('example/', views.example),

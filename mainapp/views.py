@@ -62,5 +62,5 @@ def buy (request):
 def home (request):
     return render (request, "home.html")
 
-def makeup(request):
-    return render (request, "makeup.html")
+def wedding(request):
+    return render (request, "wedding.html")
