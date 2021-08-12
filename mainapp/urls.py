@@ -8,6 +8,7 @@ urlpatterns = [
     path('shop/laptop/', views.shop_laptop),
     path('shop/smartphone/', views.shop_smartphone),
     path('shop/console/', views.shop_console),
+    path('shop/laptop/list/', views.laptop_list),
     path('buy/', views.buy),
     path('home/', views.home),
     path ('wedding/', views.wedding),
