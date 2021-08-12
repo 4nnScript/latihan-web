@@ -21,6 +21,7 @@
 </div>
 
 <div class="row">
+    {% if available %}
     <table class="table table-striped">
         <thead>
             <tr>
@@ -33,14 +34,19 @@
         <tbody>
             {% for item in product_list %}
             <tr>
-                <th scope="col">{{forloop.counter}}</th>
-                <th scope="col">{{item.name}}</th>
-                <th scope="col">{{item.description}}</th>
-                <th scope="col">{{item.price}}</th>
+                <td scope="col">{{forloop.counter}}</td>
+                <td scope="col">{{item.name}}</td>
+                <td scope="col">{{item.description}}</td>
+                <td scope="col">{{item.price}}</td>
             </tr>
             {% endfor %}
         </tbody>
     </table>
+    {% else %}
+    <div class="col text-center">
+        <span>No Avaiable Product</span>
+    </div>
+    {% endif %}
 </div>
 
 <div class="row justify-content-center">

@@ -66,12 +66,12 @@ def wedding(request):
     return render (request, "wedding.html")
 
 def laptop_list(request):
-# try:
-    catagory_laptop = Catagory.objects.get(pk=1)
-    product_laptop = Product.objects.filter(catagory=catagory_laptop)
-    return render(request, 'shop_laptop_list.html', {'product_list': product_laptop})
-# except:
-#     return HttpResponse("Terjadi Error")
+    try:
+        catagory_laptop = Catagory.objects.get(pk=1)
+        product_laptop = Product.objects.filter(catagory=catagory_laptop)
+        return render(request, 'shop_laptop_list.html', {'product_list': product_laptop})
+    except:
+        return HttpResponse("Terjadi Error")
 
 
 
